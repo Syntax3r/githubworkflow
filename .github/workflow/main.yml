@@ -1,0 +1,13 @@
+name: Example Pipeline
+
+on: [push, pull_request]  # Trigger on push or pull request events
+
+jobs:
+  build:
+    runs-on: self-hosted  # Specifies to run on a self-hosted runner
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run a sample script
+        run: echo "Running pipeline on local machine"
