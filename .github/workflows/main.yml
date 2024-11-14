@@ -11,3 +11,6 @@ jobs:
 
       - name: Run a sample script
         run: echo "Running pipeline on local machine"
+        
+      - name: Run a sample script
+        run: mkdir newTest
